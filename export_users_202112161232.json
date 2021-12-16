@@ -1,0 +1,966 @@
+{
+	"_id": {
+		"$oid": "61a7562be3893d38a7e14b37"
+	},
+	"cSessionId": "fb217b09-5641-4999-be03-389716429951",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a75944e3893d38a7e14b3a"
+	},
+	"cSessionId": "92987c90-d114-4822-b658-77cea7dda6ca",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61a7595de3893d38a7e14b3b"
+	},
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a75c32e3893d38a7e14b45"
+	},
+	"cSessionId": "ca312c83-89cd-453d-9afa-bfd5e472442d",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a763dee3893d38a7e14b58"
+	},
+	"cSessionId": "ca327ebe-3cb0-4750-8d21-162a8fdd06d8",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61a76ddce3893d38a7e14b59"
+	},
+	"cSessionId": "bda7564a-1f23-432e-a76f-53d12030224c",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a779ebe3893d38a7e14b5c"
+	},
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a77c9ae3893d38a7e14b63"
+	},
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a78061e3893d38a7e14b6a"
+	},
+	"cSessionId": "c0f2b041-50af-41ff-8348-58ad48a4a73c",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61a7863ce3893d38a7e14b6b"
+	},
+	"cSessionId": "a41c03a6-b252-4b25-b1fe-6fd423b040a5",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61a7be5ee3893d38a7e14b6c"
+	},
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61a8b010e3893d38a7e14b72"
+	},
+	"cSessionId": "456e601f-ec24-40b0-80e2-55ba4d5dbb91",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61adf95ce3893d38a7e14b73"
+	},
+	"cSessionId": "a701eae3-10c5-4c5b-95ba-ec27f57f9999",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61ae0748e3893d38a7e14b77"
+	},
+	"cSessionId": "787ff750-6860-4f25-bc27-355430af5740",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61ae09f4e3893d38a7e14b7b"
+	},
+	"cSessionId": "cb34db84-cf76-49d3-ac0a-3aa48c7c74f9",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61ae0bdae3893d38a7e14b7c"
+	},
+	"cSessionId": "a11ddd29-e14e-4dbc-a7de-7f81c65b039c",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61ae0d97e3893d38a7e14b7e"
+	},
+	"cSessionId": "712a508a-c2f5-4435-9df9-a2837030d6e2",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61afc356e3893d38a7e14b80"
+	},
+	"cSessionId": "9c102f96-63fe-485d-8b6c-9f534f5e0fc1",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b1eb9fe3893d38a7e14b84"
+	},
+	"cSessionId": "1895772c-58a7-49a1-84a5-5a90bc6e5ba8",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b20870e3893d38a7e14b86"
+	},
+	"cSessionId": "9fde4ba3-e126-43ec-aab0-b81bd4822f09",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b2271de3893d38a7e14b8a"
+	},
+	"cSessionId": "2485e61d-970b-491a-b374-4bae9ae6e6da",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b22833e3893d38a7e14b8e"
+	},
+	"cSessionId": "acbff2c1-14c2-48cc-a421-d075906ead62",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b24489e3893d38a7e14b91"
+	},
+	"cSessionId": "2e2b9c08-5075-4813-84e9-c1415d0bc529",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b25440e3893d38a7e14b92"
+	},
+	"cSessionId": "69faf1c2-a803-495e-92c0-020bf7823d1e",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b25f58e3893d38a7e14b96"
+	},
+	"cSessionId": "eaf95fcb-33bf-4ec4-a231-3da382889b35",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b260c5e3893d38a7e14b9a"
+	},
+	"cSessionId": "34d17879-9ea1-4546-a5fa-b990db49b937",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b28fa5e3893d38a7e14b9e"
+	},
+	"cSessionId": "7d17cdeb-f92a-4a09-beb3-486daaef7eee",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b2d100e3893d38a7e14ba2"
+	},
+	"cSessionId": "9f16f2db-d9c4-4a16-b09c-538b990a35e5",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b2d7c5e3893d38a7e14ba4"
+	},
+	"cSessionId": "266f6144-7f4f-4ff7-897d-96b2099359fa",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b65285e1dde503e8ab5aa0"
+	},
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b731b3e1dde503e8ab5ab9"
+	},
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc4"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb7"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecba"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbf"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbe"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc0"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b736e5e1dde503e8ab5ac5"
+	},
+	"cSessionId": "214d2f24-4df8-4052-96f1-f82139e23991",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc2"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb2"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b73866e1dde503e8ab5acb"
+	},
+	"cSessionId": "258de000-5d57-4d3a-b86c-764c5d9f6b34",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb8"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b73a59e1dde503e8ab5ad1"
+	},
+	"cSessionId": "689a4c0c-fd79-4ad9-98ab-37bc102d901b",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b74774e1dde503e8ab5ad8"
+	},
+	"cSessionId": "a1a2e1a4-3518-4027-8b74-1637cd49b27d",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b75b10e1dde503e8ab5ad9"
+	},
+	"cSessionId": "3a9ce88c-1546-47e5-92f7-e4a5d1249601",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbc"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b782f1e1dde503e8ab5adb"
+	},
+	"cSessionId": "c87a5278-970d-4fd9-930b-474db7e9e895",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b78746e1dde503e8ab5adc"
+	},
+	"cSessionId": "778c17b6-7f5a-4004-a0e9-621a2300d610",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecae"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb4"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b7925ce1dde503e8ab5adf"
+	},
+	"cSessionId": "ee7b7a13-3919-49c0-9880-e714f5f1a97f",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b7963ee1dde503e8ab5ae1"
+	},
+	"cSessionId": "54dc3083-83cf-4047-8930-b007694856ff",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b79ddee1dde503e8ab5ae2"
+	},
+	"cSessionId": "222efeb6-0e83-47de-aa6d-4669429facb7",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b7a03ae1dde503e8ab5ae3"
+	},
+	"cSessionId": "9fc9a335-129e-431a-8f22-1eb9730d40cb",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61b7c809e1dde503e8ab5ae4"
+	},
+	"cSessionId": "a96ec443-1370-441b-a136-4e71ab023d5a",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb1"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecaf"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b80418e1dde503e8ab5ae8"
+	},
+	"cSessionId": "c1333900-5069-49ed-bbea-ee173e8bd284",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61b83eeee1dde503e8ab5aea"
+	},
+	"cSessionId": "91cbb8cc-3bab-49d6-a5cc-8586e55d62bf",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61ba02d8e1dde503e8ab5aec"
+	},
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb0"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc5"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbb"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb9"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecc1"
+		}
+	]
+}
+{
+	"_id": {
+		"$oid": "61bad574e1dde503e8ab5af5"
+	},
+	"cSessionId": "09e41629-7aa5-462f-be76-d603c9a3d23d",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61baf970e1dde503e8ab5af6"
+	},
+	"cSessionId": "09791207-0b48-4c86-a657-a77455648a1a",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null
+}
+{
+	"_id": {
+		"$oid": "61baf978e1dde503e8ab5af7"
+	},
+	"cSessionId": "780ca0b3-5e76-473a-8b28-4e53b2e533b2",
+	"musicalBackground": null,
+	"visualArtBackground": null,
+	"additionalInformation": null,
+	"answeredQuestionIds": [
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb3"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecb6"
+		},
+		{
+			"$oid": "61a73d1a93c2eaef0dd5ecbd"
+		}
+	]
+}

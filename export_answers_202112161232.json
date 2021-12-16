@@ -1,0 +1,1683 @@
+{
+	"_id": {
+		"$oid": "61a75752e3893d38a7e14b38"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "fb217b09-5641-4999-be03-389716429951",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61a758a6e3893d38a7e14b39"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "fb217b09-5641-4999-be03-389716429951",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75992e3893d38a7e14b3c"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "fb217b09-5641-4999-be03-389716429951",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a759bae3893d38a7e14b3d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75a4fe3893d38a7e14b3e"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61a75a76e3893d38a7e14b3f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75af3e3893d38a7e14b40"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75b43e3893d38a7e14b41"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a75b78e3893d38a7e14b42"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75ba0e3893d38a7e14b43"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75beee3893d38a7e14b44"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a75c52e3893d38a7e14b46"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "ca312c83-89cd-453d-9afa-bfd5e472442d",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61a75c72e3893d38a7e14b47"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75c87e3893d38a7e14b48"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "ca312c83-89cd-453d-9afa-bfd5e472442d",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75c9be3893d38a7e14b49"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75cede3893d38a7e14b4a"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75d43e3893d38a7e14b4b"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61a75d7ce3893d38a7e14b4c"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75daae3893d38a7e14b4d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75e22e3893d38a7e14b4e"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75e6ae3893d38a7e14b4f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61a75ed7e3893d38a7e14b50"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75f06e3893d38a7e14b51"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a75f55e3893d38a7e14b52"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a75f83e3893d38a7e14b53"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a76004e3893d38a7e14b54"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a7607ce3893d38a7e14b55"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a760dde3893d38a7e14b56"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a761bfe3893d38a7e14b57"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "ac02f318-ecad-4adc-858d-0af475b031f2",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a76ea5e3893d38a7e14b5a"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "bda7564a-1f23-432e-a76f-53d12030224c",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a76f1be3893d38a7e14b5b"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "bda7564a-1f23-432e-a76f-53d12030224c",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a77a93e3893d38a7e14b5d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a77b19e3893d38a7e14b5e"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a77b42e3893d38a7e14b5f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61a77bb2e3893d38a7e14b60"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61a77c4be3893d38a7e14b61"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a77c72e3893d38a7e14b62"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61a77ccde3893d38a7e14b64"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "d5e55bfe-0dc7-4e30-a771-f6f65bc7c533",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a77cfbe3893d38a7e14b65"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a77d51e3893d38a7e14b66"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a77d9ce3893d38a7e14b67"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a77df2e3893d38a7e14b68"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61a78029e3893d38a7e14b69"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "2a0ba956-ce2f-46a5-af53-185889324286",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a7bea6e3893d38a7e14b6d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61a7bec3e3893d38a7e14b6e"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61a7befbe3893d38a7e14b6f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61a7bf0be3893d38a7e14b70"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61a7bf22e3893d38a7e14b71"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "d2a1cd1d-9d5c-4d4e-9331-987e6a430207",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61adf97ae3893d38a7e14b74"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "a701eae3-10c5-4c5b-95ba-ec27f57f9999",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61adf9a5e3893d38a7e14b75"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "a701eae3-10c5-4c5b-95ba-ec27f57f9999",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61adf9c6e3893d38a7e14b76"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "a701eae3-10c5-4c5b-95ba-ec27f57f9999",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ae077fe3893d38a7e14b78"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "787ff750-6860-4f25-bc27-355430af5740",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ae07c1e3893d38a7e14b79"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "787ff750-6860-4f25-bc27-355430af5740",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ae080ce3893d38a7e14b7a"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "787ff750-6860-4f25-bc27-355430af5740",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61ae0c09e3893d38a7e14b7d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "a11ddd29-e14e-4dbc-a7de-7f81c65b039c",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61ae0e1ae3893d38a7e14b7f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "712a508a-c2f5-4435-9df9-a2837030d6e2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61afc394e3893d38a7e14b81"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "9c102f96-63fe-485d-8b6c-9f534f5e0fc1",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61afc3cae3893d38a7e14b82"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "9c102f96-63fe-485d-8b6c-9f534f5e0fc1",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61afc3e2e3893d38a7e14b83"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "9c102f96-63fe-485d-8b6c-9f534f5e0fc1",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b1ec66e3893d38a7e14b85"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "1895772c-58a7-49a1-84a5-5a90bc6e5ba8",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b20906e3893d38a7e14b87"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "9fde4ba3-e126-43ec-aab0-b81bd4822f09",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b2093be3893d38a7e14b88"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "9fde4ba3-e126-43ec-aab0-b81bd4822f09",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b20951e3893d38a7e14b89"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "9fde4ba3-e126-43ec-aab0-b81bd4822f09",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b22734e3893d38a7e14b8b"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "2485e61d-970b-491a-b374-4bae9ae6e6da",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b2274ae3893d38a7e14b8c"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "2485e61d-970b-491a-b374-4bae9ae6e6da",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b22763e3893d38a7e14b8d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "2485e61d-970b-491a-b374-4bae9ae6e6da",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b22851e3893d38a7e14b8f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "acbff2c1-14c2-48cc-a421-d075906ead62",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b22866e3893d38a7e14b90"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "acbff2c1-14c2-48cc-a421-d075906ead62",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b254ece3893d38a7e14b93"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "69faf1c2-a803-495e-92c0-020bf7823d1e",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b25594e3893d38a7e14b94"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "69faf1c2-a803-495e-92c0-020bf7823d1e",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b25633e3893d38a7e14b95"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "69faf1c2-a803-495e-92c0-020bf7823d1e",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b25f87e3893d38a7e14b97"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "eaf95fcb-33bf-4ec4-a231-3da382889b35",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b25f9ee3893d38a7e14b98"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "eaf95fcb-33bf-4ec4-a231-3da382889b35",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b25fbbe3893d38a7e14b99"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "eaf95fcb-33bf-4ec4-a231-3da382889b35",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b26152e3893d38a7e14b9b"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "34d17879-9ea1-4546-a5fa-b990db49b937",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b261cfe3893d38a7e14b9c"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "34d17879-9ea1-4546-a5fa-b990db49b937",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b262f7e3893d38a7e14b9d"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "34d17879-9ea1-4546-a5fa-b990db49b937",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b28fc0e3893d38a7e14b9f"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "7d17cdeb-f92a-4a09-beb3-486daaef7eee",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b28fe4e3893d38a7e14ba0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "7d17cdeb-f92a-4a09-beb3-486daaef7eee",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b28ff7e3893d38a7e14ba1"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "7d17cdeb-f92a-4a09-beb3-486daaef7eee",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b2d184e3893d38a7e14ba3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "9f16f2db-d9c4-4a16-b09c-538b990a35e5",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b2d7ece3893d38a7e14ba5"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "266f6144-7f4f-4ff7-897d-96b2099359fa",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b65330e1dde503e8ab5aa1"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b653d5e1dde503e8ab5aa2"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b65479e1dde503e8ab5aa3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b65522e1dde503e8ab5aa4"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b655aae1dde503e8ab5aa5"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b6564de1dde503e8ab5aa6"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b65715e1dde503e8ab5aa7"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b657e0e1dde503e8ab5aa8"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b658b8e1dde503e8ab5aa9"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b6591fe1dde503e8ab5aaa"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b659e1e1dde503e8ab5aab"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b65b68e1dde503e8ab5aac"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b65e3ce1dde503e8ab5aad"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b65ec2e1dde503e8ab5aae"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b65f06e1dde503e8ab5aaf"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b65fb1e1dde503e8ab5ab0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b65fe5e1dde503e8ab5ab1"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b66012e1dde503e8ab5ab2"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b6602be1dde503e8ab5ab3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b66057e1dde503e8ab5ab4"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b6607ee1dde503e8ab5ab5"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b660d5e1dde503e8ab5ab6"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b660f3e1dde503e8ab5ab7"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61b66106e1dde503e8ab5ab8"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "9219363b-8e6b-4117-80db-d3064cfd6c76",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b73271e1dde503e8ab5aba"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b732b6e1dde503e8ab5abb"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b73348e1dde503e8ab5abc"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b733bde1dde503e8ab5abd"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b73416e1dde503e8ab5abe"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b734a4e1dde503e8ab5abf"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b73535e1dde503e8ab5ac0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b7358ae1dde503e8ab5ac1"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b735c5e1dde503e8ab5ac2"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b7364ee1dde503e8ab5ac3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b736b2e1dde503e8ab5ac4"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b73702e1dde503e8ab5ac6"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b7370ae1dde503e8ab5ac7"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"qType": 6,
+	"cSessionId": "214d2f24-4df8-4052-96f1-f82139e23991",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b73736e1dde503e8ab5ac8"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "214d2f24-4df8-4052-96f1-f82139e23991",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b73771e1dde503e8ab5ac9"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b737f1e1dde503e8ab5aca"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61b738ace1dde503e8ab5acc"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b738d9e1dde503e8ab5acd"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"qType": 4,
+	"cSessionId": "258de000-5d57-4d3a-b86c-764c5d9f6b34",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b73993e1dde503e8ab5ace"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b739bfe1dde503e8ab5acf"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b739f2e1dde503e8ab5ad0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b73a81e1dde503e8ab5ad2"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"qType": 5,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b73acee1dde503e8ab5ad3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b73bd5e1dde503e8ab5ad4"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b73bf3e1dde503e8ab5ad5"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": -1
+}
+{
+	"_id": {
+		"$oid": "61b73cc4e1dde503e8ab5ad6"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b73d31e1dde503e8ab5ad7"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"qType": 6,
+	"cSessionId": "163c72e9-ae47-4821-8068-566a08209e18",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b75bbbe1dde503e8ab5ada"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"qType": 4,
+	"cSessionId": "3a9ce88c-1546-47e5-92f7-e4a5d1249601",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b787cde1dde503e8ab5add"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"qType": 4,
+	"cSessionId": "778c17b6-7f5a-4004-a0e9-621a2300d610",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b78883e1dde503e8ab5ade"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"qType": 4,
+	"cSessionId": "778c17b6-7f5a-4004-a0e9-621a2300d610",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b79284e1dde503e8ab5ae0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "ee7b7a13-3919-49c0-9880-e714f5f1a97f",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b7c8a7e1dde503e8ab5ae5"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "a96ec443-1370-441b-a136-4e71ab023d5a",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61b7c97ee1dde503e8ab5ae6"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "a96ec443-1370-441b-a136-4e71ab023d5a",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b7ca2ee1dde503e8ab5ae7"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"qType": 5,
+	"cSessionId": "a96ec443-1370-441b-a136-4e71ab023d5a",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61b811e1e1dde503e8ab5ae9"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "c1333900-5069-49ed-bbea-ee173e8bd284",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61b8f71fe1dde503e8ab5aeb"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"qType": 5,
+	"cSessionId": "a96ec443-1370-441b-a136-4e71ab023d5a",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ba0376e1dde503e8ab5aed"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61ba043ee1dde503e8ab5aee"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"qType": 4,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61ba0532e1dde503e8ab5aef"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"qType": 6,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61ba05fce1dde503e8ab5af0"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"qType": 5,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61ba06a1e1dde503e8ab5af1"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"qType": 6,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ba0752e1dde503e8ab5af2"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"qType": 5,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 0
+}
+{
+	"_id": {
+		"$oid": "61ba088ce1dde503e8ab5af3"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"qType": 5,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 3
+}
+{
+	"_id": {
+		"$oid": "61ba0a57e1dde503e8ab5af4"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"qType": 6,
+	"cSessionId": "e4225fca-5e02-4784-9016-d1f118e70310",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61baf9a7e1dde503e8ab5af8"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"qType": 5,
+	"cSessionId": "780ca0b3-5e76-473a-8b28-4e53b2e533b2",
+	"result": 1
+}
+{
+	"_id": {
+		"$oid": "61baf9c7e1dde503e8ab5af9"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"qType": 4,
+	"cSessionId": "780ca0b3-5e76-473a-8b28-4e53b2e533b2",
+	"result": 2
+}
+{
+	"_id": {
+		"$oid": "61baf9f7e1dde503e8ab5afa"
+	},
+	"qId": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"qType": 5,
+	"cSessionId": "780ca0b3-5e76-473a-8b28-4e53b2e533b2",
+	"result": 3
+}
