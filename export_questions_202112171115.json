@@ -1,0 +1,416 @@
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecae"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"Enrique_Simonet_-_El_barbero_del_zoco_-_1897.jpg",
+		"presentation_evaluation_model_1_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_2_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_3_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_4_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecaf"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_2_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_3_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"presentation_evaluation_model_4_no_scene/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb0"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"charge_of_the_scots_greys _at_waterloo .jpg",
+		"presentation_evaluation_model_1_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_2_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_3_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_4_no_scene/charge_of_the_scots_greys _at_waterloo .mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb1"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_2_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_3_no_scene/charge_of_the_scots_greys _at_waterloo .mp3",
+		"presentation_evaluation_model_4_no_scene/charge_of_the_scots_greys _at_waterloo .mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb2"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.jpg",
+		"presentation_evaluation_model_1_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_2_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_3_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_4_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb3"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_2_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_3_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"presentation_evaluation_model_4_no_scene/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb4"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.jpg",
+		"presentation_evaluation_model_1_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_2_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_3_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_4_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb5"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_2_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_3_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"presentation_evaluation_model_4_no_scene/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb6"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"Paul_delvaux_the_viaducto.jpg",
+		"presentation_evaluation_model_1_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_2_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_3_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_4_no_scene/Paul_delvaux_the_viaducto.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb7"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_2_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_3_no_scene/Paul_delvaux_the_viaducto.mp3",
+		"presentation_evaluation_model_4_no_scene/Paul_delvaux_the_viaducto.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb8"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.jpg",
+		"presentation_evaluation_model_1_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_2_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_3_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_4_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecb9"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_2_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_3_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"presentation_evaluation_model_4_no_scene/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecba"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.jpg",
+		"presentation_evaluation_model_1_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_2_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_3_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_4_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbb"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_2_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_3_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"presentation_evaluation_model_4_no_scene/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbc"
+	},
+	"type": 4,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"flower_painting-Claude_Monet-Water_Lilies-1917-89996.jpg",
+		"presentation_evaluation_model_1_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_2_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_3_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_4_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbd"
+	},
+	"type": 5,
+	"question": "Choose the audio piece you find most pleasant to listen to.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"presentation_evaluation_model_1_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_2_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_3_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"presentation_evaluation_model_4_no_scene/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbe"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"Enrique_Simonet_-_El_barbero_del_zoco_-_1897.jpg",
+		"visual_model_1_sound_model_4/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"visual_model_2_sound_model_4/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3",
+		"visual_model_4_sound_model_4/Enrique_Simonet_-_El_barbero_del_zoco_-_1897.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecbf"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"charge_of_the_scots_greys _at_waterloo .jpg",
+		"visual_model_1_sound_model_4/charge_of_the_scots_greys _at_waterloo .mp3",
+		"visual_model_2_sound_model_4/charge_of_the_scots_greys _at_waterloo .mp3",
+		"visual_model_4_sound_model_4/charge_of_the_scots_greys _at_waterloo .mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc0"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.jpg",
+		"visual_model_1_sound_model_4/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"visual_model_2_sound_model_4/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3",
+		"visual_model_4_sound_model_4/figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc1"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.jpg",
+		"visual_model_1_sound_model_4/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"visual_model_2_sound_model_4/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3",
+		"visual_model_4_sound_model_4/cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc2"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"Paul_delvaux_the_viaducto.jpg",
+		"visual_model_1_sound_model_4/Paul_delvaux_the_viaducto.mp3",
+		"visual_model_2_sound_model_4/Paul_delvaux_the_viaducto.mp3",
+		"visual_model_4_sound_model_4/Paul_delvaux_the_viaducto.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc3"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.jpg",
+		"visual_model_1_sound_model_4/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"visual_model_2_sound_model_4/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3",
+		"visual_model_4_sound_model_4/literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc4"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.jpg",
+		"visual_model_1_sound_model_4/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"visual_model_2_sound_model_4/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3",
+		"visual_model_4_sound_model_4/landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453.mp3"
+	]
+}
+{
+	"_id": {
+		"$oid": "61a73d1a93c2eaef0dd5ecc5"
+	},
+	"type": 6,
+	"question": "Choose the audio piece you find most descriptive of the painting.",
+	"scale": [
+		null,
+		null
+	],
+	"content": [
+		"flower_painting-Claude_Monet-Water_Lilies-1917-89996.jpg",
+		"visual_model_1_sound_model_4/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"visual_model_2_sound_model_4/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3",
+		"visual_model_4_sound_model_4/flower_painting-Claude_Monet-Water_Lilies-1917-89996.mp3"
+	]
+}
