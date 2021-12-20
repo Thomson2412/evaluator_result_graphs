@@ -92,14 +92,14 @@ pq6 <- ggplot(q6, aes(x = result, fill = result)) +
 
 
    
-p1 <- combined[combined$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
-p2 <- combined[combined$painting == "Paul_delvaux_the_viaducto",]
-p3 <- combined[combined$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
-p4 <- combined[combined$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
-p5 <- combined[combined$painting == "charge_of_the_scots_greys _at_waterloo ",]
-p6 <- combined[combined$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
-p7 <- combined[combined$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
-p8 <- combined[combined$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p1 <- combined[combined$painting == "charge_of_the_scots_greys _at_waterloo ",]
+p2 <- combined[combined$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
+p3 <- combined[combined$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_18976",]
+p4 <- combined[combined$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p5 <- combined[combined$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
+p6 <- combined[combined$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
+p7 <- combined[combined$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
+p8 <- combined[combined$painting == "Paul_delvaux_the_viaducto",]
 
 pp1 <- ggplot(p1, aes(x = result, fill = result)) +
   geom_bar() +
@@ -225,76 +225,16 @@ pp8 <- ggplot(p8, aes(x = result, fill = result)) +
 
 
 
-p1q4 <- q4[q4$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
-p2q4 <- q4[q4$painting == "Paul_delvaux_the_viaducto",]
-p3q4 <- q4[q4$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
-p4q4 <- q4[q4$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
-p5q4 <- q4[q4$painting == "charge_of_the_scots_greys _at_waterloo ",]
-p6q4 <- q4[q4$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
-p7q4 <- q4[q4$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
-p8q4 <- q4[q4$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p1q4 <- q4[q4$painting == "charge_of_the_scots_greys _at_waterloo ",]
+p2q4 <- q4[q4$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
+p3q4 <- q4[q4$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
+p4q4 <- q4[q4$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p5q4 <- q4[q4$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
+p6q4 <- q4[q4$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
+p7q4 <- q4[q4$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
+p8q4 <- q4[q4$painting == "Paul_delvaux_the_viaducto",]
 
 pp1q4 <- ggplot(p1q4, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp2q4 <- ggplot(p2q4, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Paul Delvaux - The Viaducto\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp3q4 <- ggplot(p3q4, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Claude Monet - Water Lilies - 1917\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp4q4 <- ggplot(p4q4, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp5q4 <- ggplot(p5q4, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -309,7 +249,7 @@ pp5q4 <- ggplot(p5q4, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp6q4 <- ggplot(p6q4, aes(x = result, fill = result)) +
+pp2q4 <- ggplot(p2q4, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -324,7 +264,7 @@ pp6q4 <- ggplot(p6q4, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp7q4 <- ggplot(p7q4, aes(x = result, fill = result)) +
+pp3q4 <- ggplot(p3q4, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -339,7 +279,7 @@ pp7q4 <- ggplot(p7q4, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp8q4 <- ggplot(p8q4, aes(x = result, fill = result)) +
+pp4q4 <- ggplot(p4q4, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -354,81 +294,79 @@ pp8q4 <- ggplot(p8q4, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
+pp5q4 <- ggplot(p5q4, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Claude Monet - Water Lilies - 1917\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp6q4 <- ggplot(p6q4, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp7q4 <- ggplot(p7q4, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp8q4 <- ggplot(p8q4, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Paul Delvaux - The Viaducto\nQuestion 1:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
 
 
 
 
-
-p1q5 <- q5[q5$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
-p2q5 <- q5[q5$painting == "Paul_delvaux_the_viaducto",]
-p3q5 <- q5[q5$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
-p4q5 <- q5[q5$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
-p5q5 <- q5[q5$painting == "charge_of_the_scots_greys _at_waterloo ",]
-p6q5 <- q5[q5$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
-p7q5 <- q5[q5$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
-p8q5 <- q5[q5$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p1q5 <- q5[q5$painting == "charge_of_the_scots_greys _at_waterloo ",]
+p2q5 <- q5[q5$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
+p3q5 <- q5[q5$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
+p4q5 <- q5[q5$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p5q5 <- q5[q5$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
+p6q5 <- q5[q5$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
+p7q5 <- q5[q5$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
+p8q5 <- q5[q5$painting == "Paul_delvaux_the_viaducto",]
 
 pp1q5 <- ggplot(p1q5, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp2q5 <- ggplot(p2q5, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Paul Delvaux - The Viaducto\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp3q5 <- ggplot(p3q5, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Claude Monet - Water Lilies - 1917\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp4q5 <- ggplot(p4q5, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp5q5 <- ggplot(p5q5, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -443,7 +381,7 @@ pp5q5 <- ggplot(p5q5, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp6q5 <- ggplot(p6q5, aes(x = result, fill = result)) +
+pp2q5 <- ggplot(p2q5, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -458,7 +396,7 @@ pp6q5 <- ggplot(p6q5, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp7q5 <- ggplot(p7q5, aes(x = result, fill = result)) +
+pp3q5 <- ggplot(p3q5, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -473,7 +411,7 @@ pp7q5 <- ggplot(p7q5, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp8q5 <- ggplot(p8q5, aes(x = result, fill = result)) +
+pp4q5 <- ggplot(p4q5, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -488,80 +426,79 @@ pp8q5 <- ggplot(p8q5, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
+pp5q5 <- ggplot(p5q5, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Claude Monet - Water Lilies - 1917\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp6q5 <- ggplot(p6q5, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp7q5 <- ggplot(p7q5, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp8q5 <- ggplot(p8q5, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Paul Delvaux - The Viaducto\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
 
 
 
 
-p1q6 <- q6[q6$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
-p2q6 <- q6[q6$painting == "Paul_delvaux_the_viaducto",]
-p3q6 <- q6[q6$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
-p4q6 <- q6[q6$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
-p5q6 <- q6[q6$painting == "charge_of_the_scots_greys _at_waterloo ",]
-p6q6 <- q6[q6$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
-p7q6 <- q6[q6$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
-p8q6 <- q6[q6$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p1q6 <- q6[q6$painting == "charge_of_the_scots_greys _at_waterloo ",]
+p2q6 <- q6[q6$painting == "cityscape-Alfred_Sisley-Snow_at_Louveciennes-1878-46709",]
+p3q6 <- q6[q6$painting == "Enrique_Simonet_-_El_barbero_del_zoco_-_1897",]
+p4q6 <- q6[q6$painting == "figurative-John_Lavery-The_Fairy_Fountain_Glasgow_International_Exhibition-1888-294",]
+p5q6 <- q6[q6$painting == "flower_painting-Claude_Monet-Water_Lilies-1917-89996",]
+p6q6 <- q6[q6$painting == "landscape-William_Merritt_Chase-The_Olive_Grove-1910-48453",]
+p7q6 <- q6[q6$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
+p8q6 <- q6[q6$painting == "Paul_delvaux_the_viaducto",]
 
 pp1q6 <- ggplot(p1q6, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp2q6 <- ggplot(p2q6, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Paul Delvaux - The Viaducto\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp3q6 <- ggplot(p3q6, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Claude Monet - Water Lilies - 1917\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp4q6 <- ggplot(p4q6, aes(x = result, fill = result)) +
-  geom_bar() +
-  geom_text(
-    aes(label = ..count..),
-    stat = "count",
-    vjust = -.5
-  ) +
-  labs(
-    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
-    x = "Answer",
-    y = "Count"
-  ) +
-  scale_fill_manual(values = model_colors) +
-  theme_minimal()
-
-pp5q6 <- ggplot(p5q6, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -576,7 +513,7 @@ pp5q6 <- ggplot(p5q6, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp6q6 <- ggplot(p6q6, aes(x = result, fill = result)) +
+pp2q6 <- ggplot(p2q6, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -591,7 +528,7 @@ pp6q6 <- ggplot(p6q6, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp7q6 <- ggplot(p7q6, aes(x = result, fill = result)) +
+pp3q6 <- ggplot(p3q6, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -606,7 +543,7 @@ pp7q6 <- ggplot(p7q6, aes(x = result, fill = result)) +
   scale_fill_manual(values = model_colors) +
   theme_minimal()
 
-pp8q6 <- ggplot(p8q6, aes(x = result, fill = result)) +
+pp4q6 <- ggplot(p4q6, aes(x = result, fill = result)) +
   geom_bar() +
   geom_text(
     aes(label = ..count..),
@@ -615,6 +552,66 @@ pp8q6 <- ggplot(p8q6, aes(x = result, fill = result)) +
   ) +
   labs(
     title = "John Lavery - The Fairy Fountain\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp5q6 <- ggplot(p5q6, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Claude Monet - Water Lilies - 1917\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp6q6 <- ggplot(p6q6, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "William Merritt Chase - The Olive Grove - 1910\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp7q6 <- ggplot(p7q6, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Valentin Serov - Iphigenia in Tauris - 1893\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
+    x = "Answer",
+    y = "Count"
+  ) +
+  scale_fill_manual(values = model_colors) +
+  theme_minimal()
+
+pp8q6 <- ggplot(p8q6, aes(x = result, fill = result)) +
+  geom_bar() +
+  geom_text(
+    aes(label = ..count..),
+    stat = "count",
+    vjust = -.5
+  ) +
+  labs(
+    title = "Paul Delvaux - The Viaducto\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
     x = "Answer",
     y = "Count"
   ) +
