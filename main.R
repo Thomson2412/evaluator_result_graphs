@@ -123,14 +123,15 @@ p6 <- combined[combined$painting == "landscape-William_Merritt_Chase-The_Olive_G
 p7 <- combined[combined$painting == "literary_painting-Valentin_Serov-Iphigenia_in_Tauris-1893-28004",]
 p8 <- combined[combined$painting == "Paul_delvaux_the_viaducto",]
 # Create plots
-pp1 <- xr_plot(p1, "William Merritt Chase - The Olive Grove - 1910\nQuestions combined", model_colors)
-pp2 <- xr_plot(p2, "Paul Delvaux - The Viaducto\nQuestions combined", model_colors)
-pp3 <- xr_plot(p3, "Claude Monet - Water Lilies - 1917\nQuestions combined", model_colors)
-pp4 <- xr_plot(p4, "Valentin Serov - Iphigenia in Tauris - 1893\nQuestions combined", model_colors)
-pp5 <- xr_plot(p5, "Charge of the scots greys at waterloo\nQuestions combined", model_colors)
-pp6 <- xr_plot(p6, "Alfred Sisley - Snow at Louveciennes - 1878\nQuestions combined", model_colors)
-pp7 <- xr_plot(p7, "Enrique Simonet - El barbero del zoco - 1897\nQuestions combined", model_colors)
-pp8 <- xr_plot(p8, "John Lavery - The Fairy Fountain\nQuestions combined", model_colors)
+pp1 <- xr_plot(p1, "Charge of the scots greys at waterloo\nQuestions combined", model_colors)
+pp2 <- xr_plot(p2, "Alfred Sisley - Snow at Louveciennes - 1878\nQuestions combined", model_colors)
+pp3 <- xr_plot(p3, "Enrique Simonet - El barbero del zoco - 1897\nQuestions combined", model_colors)
+pp4 <- xr_plot(p4, "John Lavery - The Fairy Fountain\nQuestions combined", model_colors)
+pp5 <- xr_plot(p5, "Claude Monet - Water Lilies - 1917\nQuestions combined", model_colors)
+pp6 <- xr_plot(p6, "William Merritt Chase - The Olive Grove - 1910\nQuestions combined", model_colors)
+pp7 <- xr_plot(p7, "Valentin Serov - Iphigenia in Tauris - 1893\nQuestions combined", model_colors)
+pp8 <- xr_plot(p8, "Paul Delvaux - The Viaducto\nQuestions combined", model_colors)
+
 
 
 
@@ -323,6 +324,7 @@ pm4q4 <- xp_plot(
 # Filter data
 m1q5 <- q5[q5$result == "Model 1",]
 m2q5 <- q5[q5$result == "Model 2",]
+m3q5 <- q5[q5$result == "Model 3",]
 m4q5 <- q5[q5$result == "Model 4",]
 # Create plots
 pm1q5 <- xp_plot(
@@ -333,6 +335,11 @@ pm1q5 <- xp_plot(
 pm2q5 <- xp_plot(
   m2q5,
   "Model 2\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
+  model_colors
+)
+pm3q5 <- xp_plot(
+  m3q5,
+  "Model 3\nQuestion 2:\nChoose the audio piece you find most pleasant to listen to.",
   model_colors
 )
 pm4q5 <- xp_plot(
@@ -346,7 +353,6 @@ pm4q5 <- xp_plot(
 # Filter data
 m1q6 <- q6[q6$result == "Model 1",]
 m2q6 <- q6[q6$result == "Model 2",]
-m3q6 <- q6[q6$result == "Model 3",]
 m4q6 <- q6[q6$result == "Model 4",]
 # Create plots
 pm1q6 <- xp_plot(
@@ -357,11 +363,6 @@ pm1q6 <- xp_plot(
 pm2q6 <- xp_plot(
   m2q6,
   "Model 2\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
-  model_colors
-)
-pm3q6 <- xp_plot(
-  m3q6,
-  "Model 3\nQuestion 3:\nChoose the audio piece you find most descriptive of the painting.",
   model_colors
 )
 pm4q6 <- xp_plot(
@@ -420,11 +421,11 @@ pm4q4
 
 pm1q5
 pm2q5
+pm3q5
 pm4q5
 
 pm1q6
 pm2q6
-pm3q6
 pm4q6
 
 
@@ -467,10 +468,10 @@ ggsave("plots/pm3q4.png", plot = pm3q4, width = xp_width, height = xp_height)
 ggsave("plots/pm4q4.png", plot = pm4q4, width = xp_width, height = xp_height)
 ggsave("plots/pm1q5.png", plot = pm1q5, width = xp_width, height = xp_height)
 ggsave("plots/pm2q5.png", plot = pm2q5, width = xp_width, height = xp_height)
+ggsave("plots/pm3q5.png", plot = pm3q5, width = xp_width, height = xp_height)
 ggsave("plots/pm4q5.png", plot = pm4q5, width = xp_width, height = xp_height)
 ggsave("plots/pm1q6.png", plot = pm1q6, width = xp_width, height = xp_height)
 ggsave("plots/pm2q6.png", plot = pm2q6, width = xp_width, height = xp_height)
-ggsave("plots/pm3q6.png", plot = pm3q6, width = xp_width, height = xp_height)
 ggsave("plots/pm4q6.png", plot = pm4q6, width = xp_width, height = xp_height)
 
 
