@@ -19,22 +19,23 @@ names(answers)[names(answers) == "X_id"] <- "aId"
 combined <- merge(answers, questions, by = "qId")
 combined <- merge(combined, users, by = "cSessionId")
 
-combined$result[combined$result == -1] <- "None"
-
-combined$result[combined$qType %in% c(4, 5) & combined$result == 0] <- "Model 1.4"
-combined$result[combined$qType %in% c(4, 5) & combined$result == 1] <- "Model 2.4"
-combined$result[combined$qType %in% c(4, 5) & combined$result == 2] <- "Model 3.4"
-combined$result[combined$qType %in% c(4, 5) & combined$result == 3] <- "Model 4.4"
-
-combined$result[combined$qType == 6 & combined$result == 0] <- "Model 4.1"
-combined$result[combined$qType == 6 & combined$result == 1] <- "Model 4.2"
-combined$result[combined$qType == 6 & combined$result == 2] <- "Model 4.4"
-
 painting_list <- lapply(
   combined$content,
   function (x)(gsub('.{6}$', '', tail(strsplit(x, "/")[[1]], 1)))
 )
 combined$painting <- unlist(painting_list)
+
+plot_df <- data.frame(combined)
+plot_df$result[plot_df$result == -1] <- "None"
+
+plot_df$result[plot_df$qType %in% c(4, 5) & plot_df$result == 0] <- "Model 1.4"
+plot_df$result[plot_df$qType %in% c(4, 5) & plot_df$result == 1] <- "Model 2.4"
+plot_df$result[plot_df$qType %in% c(4, 5) & plot_df$result == 2] <- "Model 3.4"
+plot_df$result[plot_df$qType %in% c(4, 5) & plot_df$result == 3] <- "Model 4.4"
+
+plot_df$result[plot_df$qType == 6 & plot_df$result == 0] <- "Model 4.1"
+plot_df$result[plot_df$qType == 6 & plot_df$result == 1] <- "Model 4.2"
+plot_df$result[plot_df$qType == 6 & plot_df$result == 2] <- "Model 4.4"
 
 
 # Init variables and functions
@@ -92,6 +93,10 @@ model_colors <- c(
   "Model 4.1" = "#cb9ca1",
   "Model 4.2" = "#af8eb5",
 
+  "Model 1.1" = "#ffcdd2",
+  "Model 2.2" = "#e1bee7",
+  "Model 3.3" = "#c5cae9",
+
   "Model 4.4" = "#b2dfdb",
 
   "None" = "#cfd8dc"
@@ -128,11 +133,6 @@ integer_breaks <- function(n = 5, ...) {
 xr_plot <- function (p_data, x_obj, p_title, p_colors, x_blank=FALSE){
   p <- ggplot(p_data, aes_string(x = x_obj, fill = x_obj)) +
     geom_bar() +
-    # geom_text(
-    #   aes(label = ..count..),
-    #   stat = "count",
-    #   vjust = -.5
-    # ) +
     geom_text(
       aes(label = sprintf("%s (%s)", scales::percent(prop.table(stat(count))), stat(count))),
       stat = "count",
@@ -144,8 +144,10 @@ xr_plot <- function (p_data, x_obj, p_title, p_colors, x_blank=FALSE){
       y = "Count"
     ) +
     scale_y_continuous(breaks = integer_breaks()) +
-    scale_fill_manual(values = p_colors) +
     theme_minimal()
+  if(!is.null(p_colors) & length(p_colors) > 0){
+    p <- p + scale_fill_manual(values = p_colors)
+  }
   if(x_blank){
     p <- p + theme(axis.text.x=element_blank())
   }
@@ -174,7 +176,7 @@ for (row in seq_len(nrow(question_df))){
   qtype <- question_df[row,]$type
   question <- question_df[row,]$question
   models <- unlist(question_df[row,]$models)
-  filtered_data <- combined[combined$qType == qtype,]
+  filtered_data <- plot_df[plot_df$qType == qtype,]
   filtered_mc <- append(model_colors[names(model_colors) %in% models], model_colors[length(model_colors)])
   data_plot <- xr_plot(filtered_data, "result", question, filtered_mc)
   plot_list <- update_plot_list(data_plot, sprintf("pq%d", qtype), xr_width, xr_height, plot_list)
@@ -182,13 +184,13 @@ for (row in seq_len(nrow(question_df))){
 
 
 #Create plots: Model choosen per painting
-for (row in seq_len(nrow(painting_names))){
-  id <- painting_names[row,]$id
-  name <- painting_names[row,]$name
-  filtered_data <- combined[combined$painting == id,]
-  data_plot <- xr_plot(filtered_data, "result", sprintf("%s\nQuestions combined", name), model_colors)
-  plot_list <- update_plot_list(data_plot, sprintf("pp%d", row), xr_width, xr_height, plot_list)
-}
+# for (row in seq_len(nrow(painting_names))){
+#   id <- painting_names[row,]$id
+#   name <- painting_names[row,]$name
+#   filtered_data <- plot_df[plot_df == id,]
+#   data_plot <- xr_plot(filtered_data, "result", sprintf("%s\nQuestions combined", name), model_colors)
+#   plot_list <- update_plot_list(data_plot, sprintf("pp%d", row), xr_width, xr_height, plot_list)
+# }
 
 
 #Create plots: Model choosen per questions per painting
@@ -199,7 +201,7 @@ for (qrow in seq_len(nrow(question_df))){
   for (prow in seq_len(nrow(painting_names))){
     id <- painting_names[prow,]$id
     name <- painting_names[prow,]$name
-    filtered_data <- combined[combined$qType == qtype & combined$painting == id,]
+    filtered_data <- plot_df[plot_df$qType == qtype & combined$painting == id,]
     plot_title <- sprintf("%s\n%s", name, question)
     filtered_mc <- append(model_colors[names(model_colors) %in% models], model_colors[length(model_colors)])
     data_plot <- xr_plot(filtered_data, "result", plot_title, filtered_mc)
@@ -213,11 +215,11 @@ for (qrow in seq_len(nrow(question_df))){
   question <- question_df[qrow,]$question
   models <- unlist(question_df[qrow,]$models)
   for (model in models){
-    filtered_data <- combined[combined$result == model & combined$qType == qtype,]
+    filtered_data <- plot_df[plot_df$result == model & combined$qType == qtype,]
     plot_title <- sprintf("%s\n%s", model, question)
     filtered_pc <- painting_colors[names(painting_colors) %in% unique(filtered_data$painting)]
     data_plot <- xr_plot(filtered_data, "painting", plot_title, filtered_pc, TRUE)
-    model_no_space <-gsub(" ", "", model, fixed = TRUE)
+    model_no_space <- gsub(" ", "", model, fixed = TRUE)
     model_nr <- str_remove(model_no_space, "Model")
     model_no_dot <- gsub(".", "-", model_nr, fixed = TRUE)
     name <- sprintf("pm%sq%d", model_no_dot, qtype)
@@ -240,16 +242,86 @@ for (plt in plot_list){
     sprintf("plots/%s.png", plt[["name"]]),
     plot = plt[["plot"]],
     width = plt[["width"]],
-    height = plt[["height"]]
+    height = plt[["height"]],
+    bg = "white"
   )
 }
-
-
 
 # Filter data
 q4 <- combined[combined$qType == 4,]
 q5 <- combined[combined$qType == 5,]
 q6 <- combined[combined$qType == 6,]
+
+# H0: No synthesis method is cossiderd more descriptive than the others
+# H0: The synthesis method has no effect on the discriptiveness of the sonification
+# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
+summary(aov(result ~ cSessionId, q4))
+# cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  21  43.46   2.069    1.45   0.18
+# Residuals   27  38.54   1.427
+# length(unique(q4$cSessionId))
+
+summary(aov(result ~ painting, q4))
+# cor.test(q4$result, as.numeric(factor(q4$painting)))
+#              Df Sum Sq Mean Sq F value Pr(>F)
+# painting     7  12.67   1.810    1.07    0.4
+# Residuals   41  69.33   1.691
+
+summary(aov(result ~ cSessionId + painting, q4))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  21  43.46   2.069   1.372  0.242
+# painting     7   8.37   1.196   0.793  0.602
+# Residuals   20  30.17   1.508
+
+summary(aov(result ~ cSessionId, q4[q4$result != -1,]))
+# cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  17  23.39   1.376   1.154   0.37
+# Residuals   22  26.21   1.192
+# length(unique(q4$cSessionId))
+
+summary(aov(result ~ painting, q4[q4$result != -1,]))
+# cor.test(q4$result, as.numeric(factor(q4$painting)))
+#              Df Sum Sq Mean Sq F value Pr(>F)
+# painting     7  17.75  2.5357   2.548 0.0333 *
+# Residuals   32  31.85  0.9953
+
+summary(aov(result ~ cSessionId + painting, q4[q4$result != -1,]))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  17  23.39  1.3756   1.477  0.226
+# painting     7  12.24  1.7492   1.878  0.145
+# Residuals   15  13.97  0.9313
+
+# We want/assume that the participant and painting should have no effect on the result.
+# However, the participant has a significant effect on the result.
+# Furthermore, the painting also has significant influence on the precived discriptiveness of the sonification.
+# This means the there is no general consensus over wich synthesis method is the most descriptive
+
+q4merge <- data.frame(q4)
+q4merge[q4merge$result == 2,] <- 3
+summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
+
+
+# H0: No synthesis method is cossiderd more pleasant than the others
+summary(aov(result ~ cSessionId, q5))
+cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
+
+summary(aov(result ~ painting , q5))
+cor.test(q5$result, as.numeric(factor(q5$painting)))
+
+summary(aov(result ~ cSessionId + painting, q5))
+
+# H0: The visual processing has no effect on the discriptiveness of the sonification
+summary(aov(result ~ cSessionId, q6))
+cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
+
+summary(aov(result ~ painting, q6))
+cor.test(q6$result, as.numeric(factor(q6$painting)))
+
+summary(aov(result ~ cSessionId + painting, q6))
+
+
 
 # Generate summary data
 q4_best_model <- names(which.max(table(q4$result)))
@@ -274,3 +346,70 @@ xtable(
   caption = "Overview of evaluation results",
   type = "latex"
 )
+
+
+# Old stuff
+
+model_control <- data.frame(combined)
+model_control <- model_control[model_control$qType != 5,]
+# model_control[model_control$result %in% c("Model 1.4", "Model 4.1"),]$result <- "Model 1.1"
+# model_control[model_control$result %in% c("Model 2.4", "Model 4.2"),]$result <- "Model 2.2"
+# model_control[model_control$result %in% c("Model 3.4", "Model 4.2"),]$result <- "Model 3.3"
+# model_control[model_control$result %in% c("Model 4.4", "Model 4.4"),]$result <- "Model 4.4"
+
+
+for (prow in seq_len(nrow(painting_names))){
+  id <- painting_names[prow,]$id
+  name <- painting_names[prow,]$name
+  filtered_data <- combined[combined$painting == id,]
+  pxq4r_list <- filtered_data[filtered_data$qType == 4 & filtered_data$result != -1,]$result
+  pxq6r_list <- filtered_data[filtered_data$qType == 6 & filtered_data$result != -1,]$result
+
+  print(pxq4r_list)
+  print("---------------")
+  print(pxq6r_list)
+
+  if(length(pxq4r_list) != length(pxq6r_list)){
+    print("WHOOPS")
+  }
+  else{
+    for (index in seq_len(pxq4r_list)){
+      pxq4r <- pxq4r_list[[index]]
+      pxq6r <- pxq6r_list[[index]]
+      print(pxq4r)
+      print("---------------")
+      print(pxq6r)
+      print(sprintf("%s.%s", pxq4r, pxq6r))
+    }
+  }
+}
+
+filtered_mc <- append(model_colors[names(model_colors) %in% unique(model_control$result)], model_colors[length(model_colors)])
+xr_plot(model_control, "result", "Models", filtered_mc)
+
+x <- as.data.frame(lapply(model_control, function(x) factor(x, labels = seq_along(unique(x)))))
+cor(as.numeric(x[x$qType == 4]$result), as.numeric(x$result))
+
+summary(aov(result ~ qType + Error(cSessionId/result), combined[combined$qType != 5,]))
+summary(aov(result ~ qType, combined[combined$qType != 5,]))
+summary(aov(result ~ qType + painting, combined[combined$qType != 5,]))
+summary(aov(result ~ qType, combined[combined$qType != 5,]))
+summary(aov(result ~ qType + painting + Error(cSessionId/result), combined[combined$qType != 5,]))
+
+summary(aov(result ~ painting + Error(cSessionId/result), combined[combined$qType == 4,]))
+summary(aov(result ~ qType + painting + Error(cSessionId/result), combined[combined$result != -1 & combined$qType != 5,]))
+summary(aov(result ~ qType + painting, combined[combined$result != -1 & combined$qType != 5,]))
+
+summary(aov(result ~ painting + cSessionId, combined[combined$result != -1 & combined$qType == 5,]))
+
+summary(aov(result ~ cSessionId, combined[combined$result != -1 & combined$qType == 4,]))
+summary(aov(result ~ cSessionId, combined[combined$result != -1 & combined$qType == 5,]))
+summary(aov(result ~ cSessionId, combined[combined$result != -1 & combined$qType == 6,]))
+
+summary(aov(result ~ painting, combined[combined$qType == 4,]))
+summary(aov(result ~ painting, combined[combined$qType == 5,]))
+summary(aov(result ~ painting, combined[combined$qType == 6,]))
+
+summary(aov(result ~ painting + cSessionId, combined[combined$qType == 4,]))
+summary(aov(result ~ painting + cSessionId, combined[combined$qType == 5,]))
+summary(aov(result ~ painting + cSessionId, combined[combined$qType == 6,]))
