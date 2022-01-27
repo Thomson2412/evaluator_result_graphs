@@ -301,25 +301,79 @@ summary(aov(result ~ cSessionId + painting, q4[q4$result != -1,]))
 q4merge <- data.frame(q4)
 q4merge[q4merge$result == 2,] <- 3
 summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
+#             Df Sum Sq Mean Sq F value  Pr(>F)
+# cSessionId  17  55.48   3.263   4.716 0.00164 **
+# painting     6   6.23   1.038   1.500 0.24058
+# Residuals   16  11.07   0.692
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+
+
+
+
+
 
 
 # H0: No synthesis method is cossiderd more pleasant than the others
 summary(aov(result ~ cSessionId, q5))
-cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
+#cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  20  26.32  1.3160   1.452  0.169
+# Residuals   32  29.00  0.9062
 
 summary(aov(result ~ painting , q5))
-cor.test(q5$result, as.numeric(factor(q5$painting)))
+#cor.test(q5$result, as.numeric(factor(q5$painting)))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# painting     7   3.61  0.5152   0.448  0.866
+# Residuals   45  51.71  1.1492
 
 summary(aov(result ~ cSessionId + painting, q5))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  20  26.32  1.3160   1.319  0.253
+# painting     7   4.06  0.5800   0.581  0.764
+# Residuals   25  24.94  0.9976
+
+# We want/assume that the participant and painting should have no effect on the result.
+# However, the participant has a significant effect on the result.
+# Aslo we see that the has no significant influence on the precived discriptiveness of the sonification.
+# This means the there is no general consensus over wich synthesis method is the most descriptive,
+# but the model does generalize over different paintings.
+
+
+
+
 
 # H0: The visual processing has no effect on the discriptiveness of the sonification
 summary(aov(result ~ cSessionId, q6))
-cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
+#cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  22  28.94   1.315   0.861  0.636
+# Residuals   28  42.75   1.527
 
 summary(aov(result ~ painting, q6))
-cor.test(q6$result, as.numeric(factor(q6$painting)))
+#cor.test(q6$result, as.numeric(factor(q6$painting)))
+#             Df Sum Sq Mean Sq F value  Pr(>F)
+# painting     7  27.38   3.911   3.795 0.00273 **
+# Residuals   43  44.31   1.030
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 summary(aov(result ~ cSessionId + painting, q6))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  22  28.94   1.315   1.604 0.1420
+# painting     7  25.52   3.646   4.445 0.0036 **
+# Residuals   21  17.23   0.820
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+# We want/assume that the participant and painting should have no effect on the result.
+# The participant has no significant effect on the result.
+# However, the painting also has significant influence on the precived discriptiveness of the sonification.
+# This means the there is a general consensus over wich synthesis method is the most descriptive, however,
+# the painting has a significant influence over this consensus. 
+
 
 
 
@@ -346,6 +400,17 @@ xtable(
   caption = "Overview of evaluation results",
   type = "latex"
 )
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Old stuff
@@ -384,11 +449,6 @@ for (prow in seq_len(nrow(painting_names))){
   }
 }
 
-filtered_mc <- append(model_colors[names(model_colors) %in% unique(model_control$result)], model_colors[length(model_colors)])
-xr_plot(model_control, "result", "Models", filtered_mc)
-
-x <- as.data.frame(lapply(model_control, function(x) factor(x, labels = seq_along(unique(x)))))
-cor(as.numeric(x[x$qType == 4]$result), as.numeric(x$result))
 
 summary(aov(result ~ qType + Error(cSessionId/result), combined[combined$qType != 5,]))
 summary(aov(result ~ qType, combined[combined$qType != 5,]))
