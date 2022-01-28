@@ -2,9 +2,11 @@
 # install.packages("kableExtra")
 # install.packages("xtable")
 # install.packages("scales")
+# install.packages("pwr")
 library(tidyverse)
 library(xtable)
 library(scales)
+library(pwr)
 
 
 # Prepare data
@@ -254,6 +256,18 @@ q6 <- combined[combined$qType == 6,]
 
 # H0: No synthesis method is cossiderd more descriptive than the others
 # H0: The synthesis method has no effect on the discriptiveness of the sonification
+
+chisq.test(c(
+  nrow(q4[q4$result == 0,]),
+  nrow(q4[q4$result == 1,]),
+  nrow(q4[q4$result == 2,]),
+  nrow(q4[q4$result == 3,]),
+  nrow(q4[q4$result == -1,]))
+)
+# X-squared = 7.2245, df = 4, p-value = 0.1245
+
+pwr.chisq.test(0.05, nrow(q4), 4)
+
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
 summary(aov(result ~ cSessionId, q4))
 # cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
@@ -317,6 +331,17 @@ summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
 
 
 # H0: No synthesis method is cossiderd more pleasant than the others
+
+chisq.test(c(
+  nrow(q5[q4$result == 0,]),
+  nrow(q5[q4$result == 1,]),
+  nrow(q5[q4$result == 2,]),
+  nrow(q5[q4$result == 3,]),
+  nrow(q5[q4$result == -1,]))
+)
+# X-squared = 7.6604, df = 4, p-value = 0.1048
+
+# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
 summary(aov(result ~ cSessionId, q5))
 #cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
 #             Df Sum Sq Mean Sq F value Pr(>F)
@@ -346,6 +371,17 @@ summary(aov(result ~ cSessionId + painting, q5))
 
 
 # H0: The visual processing has no effect on the discriptiveness of the sonification
+
+chisq.test(c(
+  nrow(q6[q4$result == 0,]),
+  nrow(q6[q4$result == 1,]),
+  nrow(q6[q4$result == 2,]),
+  nrow(q6[q4$result == 3,]),
+  nrow(q6[q4$result == -1,]))
+)
+# X-squared = 8.1176, df = 4, p-value = 0.08736
+
+# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
 summary(aov(result ~ cSessionId, q6))
 #cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
 #             Df Sum Sq Mean Sq F value Pr(>F)
@@ -372,7 +408,7 @@ summary(aov(result ~ cSessionId + painting, q6))
 # The participant has no significant effect on the result.
 # However, the painting also has significant influence on the precived discriptiveness of the sonification.
 # This means the there is a general consensus over wich synthesis method is the most descriptive, however,
-# the painting has a significant influence over this consensus. 
+# the painting has a significant influence over this consensus.
 
 
 
