@@ -174,6 +174,14 @@ update_plot_list <- function(plot_data, name, width, height, plt_lst) {
   return(plt_lst)
 }
 
+22
+
+clipboard <- function(x, sep="\t", row.names=FALSE, col.names=TRUE){
+  con <- pipe("xclip -selection clipboard -i", open="w")
+  write.table(x, con, sep=sep, row.names=row.names, col.names=col.names)
+  close(con)
+}
+
 
 #Create plots: Model choosen per questions
 for (row in seq_len(nrow(question_df))) {
