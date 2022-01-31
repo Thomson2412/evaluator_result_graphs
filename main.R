@@ -289,15 +289,18 @@ chisq.test(c(
 
 # All Models and None paired
 q4_pairs <- combn(unique(q4$result), 2)
+q4_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
+colnames(q4_chisq_pair_result) <- c("None", ag_model_list)
+rownames(q4_chisq_pair_result) <- colnames(q4_chisq_pair_result)
 for (col in seq_len(ncol(q4_pairs))) {
   pair_x <- q4_pairs[, col][[1]]
   pair_y <- q4_pairs[, col][[2]]
-
   val <- chisq.test(c(
     nrow(q4[q4$result == pair_x,]),
     nrow(q4[q4$result == pair_y,]))
   )
-  print(sprintf("%s_%s: %s", pair_x, pair_y, val[["p.value"]]))
+  q4_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+  q4_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
 }
 
 # Check if there are enough samples
@@ -391,15 +394,18 @@ chisq.test(c(
 
 # All Models and None paired
 q5_pairs <- combn(unique(q5$result), 2)
+q5_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
+colnames(q5_chisq_pair_result) <- c("None", ag_model_list)
+rownames(q5_chisq_pair_result) <- colnames(q5_chisq_pair_result)
 for (col in seq_len(ncol(q5_pairs))) {
   pair_x <- q5_pairs[, col][[1]]
   pair_y <- q5_pairs[, col][[2]]
-
   val <- chisq.test(c(
     nrow(q5[q5$result == pair_x,]),
     nrow(q5[q5$result == pair_y,]))
   )
-  print(sprintf("%s_%s: %s", pair_x, pair_y, val[["p.value"]]))
+  q5_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+  q5_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
 }
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
@@ -458,15 +464,18 @@ chisq.test(c(
 
 # All Models and None paired
 q6_pairs <- combn(unique(q6$result), 2)
+q6_chisq_pair_result <- matrix(nrow = 4, ncol = 4)
+colnames(q6_chisq_pair_result) <- c("None", vp_model_list)
+rownames(q6_chisq_pair_result) <- colnames(q6_chisq_pair_result)
 for (col in seq_len(ncol(q6_pairs))) {
   pair_x <- q6_pairs[, col][[1]]
   pair_y <- q6_pairs[, col][[2]]
-
   val <- chisq.test(c(
     nrow(q6[q6$result == pair_x,]),
     nrow(q6[q6$result == pair_y,]))
   )
-  print(sprintf("%s_%s: %s", pair_x, pair_y, val[["p.value"]]))
+  q6_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+  q6_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
 }
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
