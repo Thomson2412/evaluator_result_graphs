@@ -174,8 +174,6 @@ update_plot_list <- function(plot_data, name, width, height, plt_lst) {
   return(plt_lst)
 }
 
-22
-
 clipboard <- function(x, sep="\t", row.names=FALSE, col.names=TRUE){
   con <- pipe("xclip -selection clipboard -i", open="w")
   write.table(x, con, sep=sep, row.names=row.names, col.names=col.names)
@@ -335,14 +333,12 @@ summary(aov(result ~ cSessionId + painting, q4))
 # Residuals   20  30.17   1.508
 
 summary(aov(result ~ cSessionId, q4[q4$result != -1,]))
-# cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
 #             Df Sum Sq Mean Sq F value Pr(>F)
 # cSessionId  17  23.39   1.376   1.154   0.37
 # Residuals   22  26.21   1.192
 # length(unique(q4$cSessionId))
 
 summary(aov(result ~ painting, q4[q4$result != -1,]))
-# cor.test(q4$result, as.numeric(factor(q4$painting)))
 #              Df Sum Sq Mean Sq F value Pr(>F)
 # painting     7  17.75  2.5357   2.548 0.0333 *
 # Residuals   32  31.85  0.9953
@@ -352,11 +348,6 @@ summary(aov(result ~ cSessionId + painting, q4[q4$result != -1,]))
 # cSessionId  17  23.39  1.3756   1.477  0.226
 # painting     7  12.24  1.7492   1.878  0.145
 # Residuals   15  13.97  0.9313
-
-# We want/assume that the participant and painting should have no effect on the result.
-# However, the participant has a significant effect on the result.
-# Furthermore, the painting also has significant influence on the precived discriptiveness of the sonification.
-# This means the there is no general consensus over wich synthesis method is the most descriptive
 
 q4merge <- data.frame(q4)
 q4merge[q4merge$result == 2,] <- 3
@@ -435,11 +426,21 @@ summary(aov(result ~ cSessionId + painting, q5))
 # painting     7   4.06  0.5800   0.581  0.764
 # Residuals   25  24.94  0.9976
 
-# We want/assume that the participant and painting should have no effect on the result.
-# However, the participant has a significant effect on the result.
-# Aslo we see that the has no significant influence on the precived discriptiveness of the sonification.
-# This means the there is no general consensus over wich synthesis method is the most descriptive,
-# but the model does generalize over different paintings.
+summary(aov(result ~ cSessionId, q5[q5$result != -1,]))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  19   15.5  0.8158   0.859  0.629
+# Residuals   30   28.5  0.9500
+
+summary(aov(result ~ painting, q5[q5$result != -1,]))
+#              Df Sum Sq Mean Sq F value Pr(>F)
+# painting     7   5.29  0.7551   0.819  0.577
+# Residuals   42  38.71  0.9218
+
+summary(aov(result ~ cSessionId + painting, q5[q5$result != -1,]))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  19 15.500  0.8158   0.781  0.706
+# painting     7  4.465  0.6378   0.610  0.742
+# Residuals   23 24.035  1.0450
 
 
 # H0: The visual processing has no effect on the discriptiveness of the sonification
@@ -509,11 +510,27 @@ summary(aov(result ~ cSessionId + painting, q6))
 # ---
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-# We want/assume that the participant and painting should have no effect on the result.
-# The participant has no significant effect on the result.
-# However, the painting also has significant influence on the precived discriptiveness of the sonification.
-# This means the there is a general consensus over wich synthesis method is the most descriptive, however,
-# the painting has a significant influence over this consensus.
+summary(aov(result ~ cSessionId, q6[q6$result != -1,]))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  18  14.05  0.7807   1.099  0.414
+# Residuals   21  14.92  0.7106
+
+summary(aov(result ~ painting, q6[q6$result != -1,]))
+#              Df Sum Sq Mean Sq F value Pr(>F)
+# painting     7  16.03  2.2896   5.659 0.000258 ***
+# Residuals   32  12.95  0.4046
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+summary(aov(result ~ cSessionId + painting, q6[q6$result != -1,]))
+#             Df Sum Sq Mean Sq F value Pr(>F)
+# cSessionId  18  14.05  0.7807   2.584 0.0386 *
+# painting     7  10.69  1.5275   5.055 0.0049 **
+# Residuals   14   4.23  0.3022
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
 
 
 # Generate summary data
