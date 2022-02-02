@@ -260,57 +260,45 @@ q4 <- combined[combined$qType == 4,]
 q5 <- combined[combined$qType == 5,]
 q6 <- combined[combined$qType == 6,]
 
-# H0: No synthesis method is cossiderd more descriptive than the others
-# H0: The synthesis method has no effect on the discriptiveness of the sonification
+# H0: No synthesis method is considered more descriptive than the others
+# H0: The synthesis method has no effect on the descriptiveness of the sonification
 # H0: The results will show the same amount of votes for each model (or None)
 
-# All models and None
-chisq.test(c(
-  nrow(q4[q4$result == 0,]),
-  nrow(q4[q4$result == 1,]),
-  nrow(q4[q4$result == 2,]),
-  nrow(q4[q4$result == 3,]),
-  nrow(q4[q4$result == -1,]))
-)
-# X-squared = 7.2245, df = 4, p-value = 0.1245
+# Create click no click matrix
+q4_click_no_click <- matrix(nrow = 2, ncol = length(unique(q4$result)))
+colnames(q4_click_no_click) <- c("None", ag_model_list)
+rownames(q4_click_no_click) <- c("Click", "No click")
+for (r in unique(q4$result)){
+  q4_click_no_click[1, r + 2] <- nrow(q4[q4$result == r,])
+  q4_click_no_click[2, r + 2] <- nrow(q4) - nrow(q4[q4$result == r,])
+}
 
-# All models no None
-chisq.test(c(
-  nrow(q4[q4$result == 0,]),
-  nrow(q4[q4$result == 1,]),
-  nrow(q4[q4$result == 2,]),
-  nrow(q4[q4$result == 3,]))
-)
-# X-squared = 7, df = 3, p-value = 0.0719
+# Click no click Chi Square Test
+chisq.test(q4_click_no_click, simulate.p.value = TRUE)
+# X-squared = 9.0306, df = NA, p-value = 0.06347
 
-# All models vs None
-chisq.test(c(
-  nrow(q4[q4$result == 0,]) +
-    nrow(q4[q4$result == 1,]) +
-    nrow(q4[q4$result == 2,]) +
-    nrow(q4[q4$result == 3,]),
-  nrow(q4[q4$result == -1,]))
-)
-# X-squared = 19.612, df = 1, p-value = 9.486e-06
+# Click no click without None
+chisq.test(q4_click_no_click[, 2:ncol(q4_click_no_click)], simulate.p.value = TRUE)
+# X-squared = 8.7949, df = NA, p-value = 0.03498
 
-# All Models and None paired
+# Click no click all models and None paired
 q4_pairs <- combn(unique(q4$result), 2)
-q4_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
-colnames(q4_chisq_pair_result) <- c("None", ag_model_list)
-rownames(q4_chisq_pair_result) <- colnames(q4_chisq_pair_result)
+q4_cnc_pair_result <- matrix(nrow = length(unique(q4$result)), ncol = length(unique(q4$result)))
+colnames(q4_cnc_pair_result) <- c("None", ag_model_list)
+rownames(q4_cnc_pair_result) <- colnames(q4_cnc_pair_result)
 for (col in seq_len(ncol(q4_pairs))) {
-  pair_x <- q4_pairs[, col][[1]]
-  pair_y <- q4_pairs[, col][[2]]
-  val <- chisq.test(c(
-    nrow(q4[q4$result == pair_x,]),
-    nrow(q4[q4$result == pair_y,]))
-  )
-  q4_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
-  q4_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+  model_x <- q4_pairs[, col][[1]]
+  model_y <- q4_pairs[, col][[2]]
+  val <- chisq.test(q4_click_no_click[, c(model_x + 2, model_y + 2)] ,simulate.p.value = TRUE)
+  q4_cnc_pair_result[model_y + 2, model_x + 2] <- val[["p.value"]]
+  q4_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
 # Check if there are enough samples
+# TODO: Power analysis
+# ----------------------------------------------------------------------------------------------------------------------
 pwr.chisq.test(0.05, nrow(q4), 4)
+# ----------------------------------------------------------------------------------------------------------------------
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
 summary(aov(result ~ cSessionId, q4))
@@ -360,51 +348,38 @@ summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
-# H0: No synthesis method is cossiderd more pleasant than the others
+# H0: No synthesis method is considered more pleasant than the others
+# H0: The synthesis method has no effect on the pleasantness of the sonification
+# H0: The results will show the same amount of votes for each model (or None)
 
-# All models and None
-chisq.test(c(
-  nrow(q5[q4$result == 0,]),
-  nrow(q5[q4$result == 1,]),
-  nrow(q5[q4$result == 2,]),
-  nrow(q5[q4$result == 3,]),
-  nrow(q5[q4$result == -1,]))
-)
-# X-squared = 7.6604, df = 4, p-value = 0.1048
+# Create click no click matrix
+q5_click_no_click <- matrix(nrow = 2, ncol = length(unique(q5$result)))
+colnames(q5_click_no_click) <- c("None", ag_model_list)
+rownames(q5_click_no_click) <- c("Click", "No click")
+for (r in unique(q5$result)){
+  q5_click_no_click[1, r + 2] <- nrow(q5[q5$result == r,])
+  q5_click_no_click[2, r + 2] <- nrow(q5) - nrow(q5[q5$result == r,])
+}
 
-# All models no None
-chisq.test(c(
-  nrow(q5[q5$result == 0,]),
-  nrow(q5[q5$result == 1,]),
-  nrow(q5[q5$result == 2,]),
-  nrow(q5[q5$result == 3,]))
-)
-# X-squared = 14.32, df = 3, p-value = 0.0025
+# Click no click Chi Square Test
+chisq.test(q5_click_no_click, simulate.p.value = TRUE)
+# X-squared = 29.623, df = NA, p-value = 0.0004998
 
-# All models vs None
-chisq.test(c(
-  nrow(q5[q5$result == 0,]) +
-    nrow(q5[q5$result == 1,]) +
-    nrow(q5[q5$result == 2,]) +
-    nrow(q5[q5$result == 3,]),
-  nrow(q5[q5$result == -1,]))
-)
-# X-squared = 41.679, df = 1, p-value = 1.075e-10
+# Click no click without None
+chisq.test(q5_click_no_click[, 2:ncol(q5_click_no_click)], simulate.p.value = TRUE)
+# X-squared = 18.74, df = NA, p-value = 0.001999
 
-# All Models and None paired
+# Click no click all models and None paired
 q5_pairs <- combn(unique(q5$result), 2)
-q5_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
-colnames(q5_chisq_pair_result) <- c("None", ag_model_list)
-rownames(q5_chisq_pair_result) <- colnames(q5_chisq_pair_result)
+q5_cnc_pair_result <- matrix(nrow = length(unique(q5$result)), ncol = length(unique(q5$result)))
+colnames(q5_cnc_pair_result) <- c("None", ag_model_list)
+rownames(q5_cnc_pair_result) <- colnames(q5_cnc_pair_result)
 for (col in seq_len(ncol(q5_pairs))) {
-  pair_x <- q5_pairs[, col][[1]]
-  pair_y <- q5_pairs[, col][[2]]
-  val <- chisq.test(c(
-    nrow(q5[q5$result == pair_x,]),
-    nrow(q5[q5$result == pair_y,]))
-  )
-  q5_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
-  q5_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+  model_x <- q5_pairs[, col][[1]]
+  model_y <- q5_pairs[, col][[2]]
+  val <- chisq.test(q5_click_no_click[, c(model_x + 2, model_y + 2)] ,simulate.p.value = TRUE)
+  q5_cnc_pair_result[model_y + 2, model_x + 2] <- val[["p.value"]]
+  q5_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
@@ -443,48 +418,38 @@ summary(aov(result ~ cSessionId + painting, q5[q5$result != -1,]))
 # Residuals   23 24.035  1.0450
 
 
-# H0: The visual processing has no effect on the discriptiveness of the sonification
+# H0: No visual processing method is considered more descriptive than the others
+# H0: The visual processing method has no effect on the descriptiveness of the sonification
+# H0: The results will show the same amount of votes for each model (or None)
 
-# All models and None
-chisq.test(c(
-  nrow(q6[q6$result == 0,]),
-  nrow(q6[q6$result == 1,]),
-  nrow(q6[q6$result == 2,]),
-  nrow(q6[q6$result == -1,]))
-)
-# X-squared = 5.7059, df = 3, p-value = 0.1268
+# Create click no click matrix
+q6_click_no_click <- matrix(nrow = 2, ncol = length(unique(q6$result)))
+colnames(q6_click_no_click) <- c("None", vp_model_list)
+rownames(q6_click_no_click) <- c("Click", "No click")
+for (r in unique(q6$result)){
+  q6_click_no_click[1, r + 2] <- nrow(q6[q6$result == r,])
+  q6_click_no_click[2, r + 2] <- nrow(q6) - nrow(q6[q6$result == r,])
+}
 
-# All models no None
-chisq.test(c(
-  nrow(q6[q6$result == 0,]),
-  nrow(q6[q6$result == 1,]),
-  nrow(q6[q6$result == 2,]))
-)
-# X-squared = 5.15, df = 2, p-value = 0.07615
+# Click no click Chi Square Test
+chisq.test(q6_click_no_click, simulate.p.value = TRUE)
+# X-squared = 7.6078, df = NA, p-value = 0.05397
 
-# All models vs None
-chisq.test(c(
-  nrow(q6[q6$result == 0,]) +
-    nrow(q6[q6$result == 1,]) +
-    nrow(q6[q6$result == 2,]),
-  nrow(q6[q6$result == -1,]))
-)
-# X-squared = 16.49, df = 1, p-value = 4.89e-05
+# Click no click without None
+chisq.test(q6_click_no_click[, 2:ncol(q6_click_no_click)], simulate.p.value = TRUE)
+# X-squared = 6.973, df = NA, p-value = 0.03248
 
-# All Models and None paired
+# Click no click all models and None paired
 q6_pairs <- combn(unique(q6$result), 2)
-q6_chisq_pair_result <- matrix(nrow = 4, ncol = 4)
-colnames(q6_chisq_pair_result) <- c("None", vp_model_list)
-rownames(q6_chisq_pair_result) <- colnames(q6_chisq_pair_result)
+q6_cnc_pair_result <- matrix(nrow = length(unique(q6$result)), ncol = length(unique(q6$result)))
+colnames(q6_cnc_pair_result) <- c("None", vp_model_list)
+rownames(q6_cnc_pair_result) <- colnames(q6_cnc_pair_result)
 for (col in seq_len(ncol(q6_pairs))) {
-  pair_x <- q6_pairs[, col][[1]]
-  pair_y <- q6_pairs[, col][[2]]
-  val <- chisq.test(c(
-    nrow(q6[q6$result == pair_x,]),
-    nrow(q6[q6$result == pair_y,]))
-  )
-  q6_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
-  q6_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+  model_x <- q6_pairs[, col][[1]]
+  model_y <- q6_pairs[, col][[2]]
+  val <- chisq.test(q6_click_no_click[, c(model_x + 2, model_y + 2)] ,simulate.p.value = TRUE)
+  q6_cnc_pair_result[model_y + 2, model_x + 2] <- val[["p.value"]]
+  q6_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
@@ -618,3 +583,183 @@ xtable(
 # summary(aov(result ~ painting + cSessionId, combined[combined$qType == 4,]))
 # summary(aov(result ~ painting + cSessionId, combined[combined$qType == 5,]))
 # summary(aov(result ~ painting + cSessionId, combined[combined$qType == 6,]))
+
+
+
+
+# # All models and None
+# chisq.test(c(
+#   nrow(q4[q4$result == 0,]),
+#   nrow(q4[q4$result == 1,]),
+#   nrow(q4[q4$result == 2,]),
+#   nrow(q4[q4$result == 3,]),
+#   nrow(q4[q4$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 7.2245, df = NA, p-value = 0.1344
+# 
+# # All models no None
+# chisq.test(c(
+#   nrow(q4[q4$result == 0,]),
+#   nrow(q4[q4$result == 1,]),
+#   nrow(q4[q4$result == 2,]),
+#   nrow(q4[q4$result == 3,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 7, df = NA, p-value = 0.07496
+# 
+# # All models vs None
+# chisq.test(c(
+#   nrow(q4[q4$result == 0,]) +
+#     nrow(q4[q4$result == 1,]) +
+#     nrow(q4[q4$result == 2,]) +
+#     nrow(q4[q4$result == 3,]),
+#   nrow(q4[q4$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 19.612, df = 1, p-value = 9.486e-06
+# 
+# # Mean models vs None
+# chisq.test(c(
+#   (nrow(q4[q4$result == 0,]) +
+#     nrow(q4[q4$result == 1,]) +
+#     nrow(q4[q4$result == 2,]) +
+#     nrow(q4[q4$result == 3,])) / 4,
+#   nrow(q4[q4$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 0.052632, df = NA, p-value = 1
+# 
+# # All Models and None paired
+# q4_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
+# colnames(q4_chisq_pair_result) <- c("None", ag_model_list)
+# rownames(q4_chisq_pair_result) <- colnames(q4_chisq_pair_result)
+# for (col in seq_len(ncol(q4_pairs))) {
+#   pair_x <- q4_pairs[, col][[1]]
+#   pair_y <- q4_pairs[, col][[2]]
+#   val <- chisq.test(c(
+#     nrow(q4[q4$result == pair_x,]),
+#     nrow(q4[q4$result == pair_y,])),
+#                     simulate.p.value = TRUE
+#   )
+#   q4_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+#   q4_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+# }
+
+
+# # All models and None
+# chisq.test(c(
+#   nrow(q5[q4$result == 0,]),
+#   nrow(q5[q4$result == 1,]),
+#   nrow(q5[q4$result == 2,]),
+#   nrow(q5[q4$result == 3,]),
+#   nrow(q5[q4$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 7.6604, df = NA, p-value = 0.1079
+# 
+# # All models no None
+# chisq.test(c(
+#   nrow(q5[q5$result == 0,]),
+#   nrow(q5[q5$result == 1,]),
+#   nrow(q5[q5$result == 2,]),
+#   nrow(q5[q5$result == 3,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 14.32, df = NA, p-value = 0.003998
+# 
+# # All models vs None
+# chisq.test(c(
+#   nrow(q5[q5$result == 0,]) +
+#     nrow(q5[q5$result == 1,]) +
+#     nrow(q5[q5$result == 2,]) +
+#     nrow(q5[q5$result == 3,]),
+#   nrow(q5[q5$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 41.679, df = NA, p-value = 0.0004998
+# 
+# # Mean models vs None
+# chisq.test(c(
+#   (nrow(q5[q5$result == 0,]) +
+#     nrow(q5[q5$result == 1,]) +
+#     nrow(q5[q5$result == 2,]) +
+#     nrow(q5[q5$result == 3,])) / 4,
+#   nrow(q5[q5$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 5.8226, df = NA, p-value = 0.007496
+# 
+# # All Models and None paired
+# q5_pairs <- combn(unique(q5$result), 2)
+# q5_chisq_pair_result <- matrix(nrow = 5, ncol = 5)
+# colnames(q5_chisq_pair_result) <- c("None", ag_model_list)
+# rownames(q5_chisq_pair_result) <- colnames(q5_chisq_pair_result)
+# for (col in seq_len(ncol(q5_pairs))) {
+#   pair_x <- q5_pairs[, col][[1]]
+#   pair_y <- q5_pairs[, col][[2]]
+#   val <- chisq.test(c(
+#     nrow(q5[q5$result == pair_x,]),
+#     nrow(q5[q5$result == pair_y,])),
+#                     simulate.p.value = TRUE
+#   )
+#   q5_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+#   q5_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+# }
+
+
+# # All models and None
+# chisq.test(c(
+#   nrow(q6[q6$result == 0,]),
+#   nrow(q6[q6$result == 1,]),
+#   nrow(q6[q6$result == 2,]),
+#   nrow(q6[q6$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 5.7059, df = NA, p-value = 0.1239
+# 
+# # All models no None
+# chisq.test(c(
+#   nrow(q6[q6$result == 0,]),
+#   nrow(q6[q6$result == 1,]),
+#   nrow(q6[q6$result == 2,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 5.15, df = 2, p-value = 0.07615
+# 
+# # All models vs None
+# chisq.test(c(
+#   nrow(q6[q6$result == 0,]) +
+#     nrow(q6[q6$result == 1,]) +
+#     nrow(q6[q6$result == 2,]),
+#   nrow(q6[q6$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 16.49, df = NA, p-value = 0.0004998
+# 
+# # Mean models vs None
+# chisq.test(c(
+#   (nrow(q6[q6$result == 0,]) +
+#     nrow(q6[q6$result == 1,]) +
+#     nrow(q6[q6$result == 2,])) / 3,
+#   nrow(q6[q6$result == -1,])),
+#            simulate.p.value = TRUE
+# )
+# # X-squared = 0.22374, df = NA, p-value = 0.5457
+# 
+# # All Models and None paired
+# q6_pairs <- combn(unique(q6$result), 2)
+# q6_chisq_pair_result <- matrix(nrow = 4, ncol = 4)
+# colnames(q6_chisq_pair_result) <- c("None", vp_model_list)
+# rownames(q6_chisq_pair_result) <- colnames(q6_chisq_pair_result)
+# for (col in seq_len(ncol(q6_pairs))) {
+#   pair_x <- q6_pairs[, col][[1]]
+#   pair_y <- q6_pairs[, col][[2]]
+#   val <- chisq.test(c(
+#     nrow(q6[q6$result == pair_x,]),
+#     nrow(q6[q6$result == pair_y,])),
+#                     simulate.p.value = TRUE
+#   )
+#   q6_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
+#   q6_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
+# }
