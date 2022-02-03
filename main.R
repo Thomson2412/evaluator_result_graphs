@@ -274,7 +274,7 @@ for (r in unique(q4$result)){
 }
 
 # Click no click Chi Square Test
-chisq.test(q4_click_no_click, simulate.p.value = TRUE)
+q4_all_chisq <- chisq.test(q4_click_no_click, simulate.p.value = TRUE)
 # X-squared = 9.0306, df = NA, p-value = 0.06347
 
 # Click no click without None
@@ -297,8 +297,14 @@ for (col in seq_len(ncol(q4_pairs))) {
 # Check if there are enough samples
 # TODO: Power analysis
 # ----------------------------------------------------------------------------------------------------------------------
-pwr.chisq.test(0.05, nrow(q4), 4)
+pwr.chisq.test(
+  sqrt(q4_all_chisq[["statistic"]][[1]] / (nrow(q4) * (ncol(q4_click_no_click) - 1))),
+  nrow(q4),
+  length(unique(q4$result) - 1)
+)
 # ----------------------------------------------------------------------------------------------------------------------
+
+
 
 # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
 summary(aov(result ~ cSessionId, q4))
