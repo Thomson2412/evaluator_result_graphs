@@ -278,7 +278,7 @@ q4_all_chisq <- chisq.test(q4_click_no_click, simulate.p.value = TRUE)
 # X-squared = 9.0306, df = NA, p-value = 0.06347
 
 # Click no click without None
-chisq.test(q4_click_no_click[, 2:ncol(q4_click_no_click)], simulate.p.value = TRUE)
+q4_no_none_chisq <- chisq.test(q4_click_no_click[, 2:ncol(q4_click_no_click)], simulate.p.value = TRUE)
 # X-squared = 8.7949, df = NA, p-value = 0.03498
 
 # Click no click all models and None paired
@@ -294,64 +294,22 @@ for (col in seq_len(ncol(q4_pairs))) {
   q4_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
-# Check if there are enough samples
-# TODO: Power analysis
-# ----------------------------------------------------------------------------------------------------------------------
+# Power analysis on all models and None
 pwr.chisq.test(
   sqrt(q4_all_chisq[["statistic"]][[1]] / (nrow(q4) * (ncol(q4_click_no_click) - 1))),
   nrow(q4),
-  length(unique(q4$result) - 1)
+  ncol(q4_click_no_click) - 1
 )
-# ----------------------------------------------------------------------------------------------------------------------
+# power = 0.1897036
 
+# Power analysis on all models no None
+pwr.chisq.test(
+  sqrt(q4_no_none_chisq[["statistic"]][[1]] / (nrow(q4) * (ncol(q4_click_no_click) - 2))),
+  nrow(q4),
+  ncol(q4_click_no_click) - 2
+)
+# power = 0.2689136
 
-
-# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
-summary(aov(result ~ cSessionId, q4))
-# cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  21  43.46   2.069    1.45   0.18
-# Residuals   27  38.54   1.427
-# length(unique(q4$cSessionId))
-
-summary(aov(result ~ painting, q4))
-# cor.test(q4$result, as.numeric(factor(q4$painting)))
-#              Df Sum Sq Mean Sq F value Pr(>F)
-# painting     7  12.67   1.810    1.07    0.4
-# Residuals   41  69.33   1.691
-
-summary(aov(result ~ cSessionId + painting, q4))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  21  43.46   2.069   1.372  0.242
-# painting     7   8.37   1.196   0.793  0.602
-# Residuals   20  30.17   1.508
-
-summary(aov(result ~ cSessionId, q4[q4$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  17  23.39   1.376   1.154   0.37
-# Residuals   22  26.21   1.192
-# length(unique(q4$cSessionId))
-
-summary(aov(result ~ painting, q4[q4$result != -1,]))
-#              Df Sum Sq Mean Sq F value Pr(>F)
-# painting     7  17.75  2.5357   2.548 0.0333 *
-# Residuals   32  31.85  0.9953
-
-summary(aov(result ~ cSessionId + painting, q4[q4$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  17  23.39  1.3756   1.477  0.226
-# painting     7  12.24  1.7492   1.878  0.145
-# Residuals   15  13.97  0.9313
-
-q4merge <- data.frame(q4)
-q4merge[q4merge$result == 2,] <- 3
-summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
-#             Df Sum Sq Mean Sq F value  Pr(>F)
-# cSessionId  17  55.48   3.263   4.716 0.00164 **
-# painting     6   6.23   1.038   1.500 0.24058
-# Residuals   16  11.07   0.692
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 # H0: No synthesis method is considered more pleasant than the others
@@ -368,11 +326,11 @@ for (r in unique(q5$result)){
 }
 
 # Click no click Chi Square Test
-chisq.test(q5_click_no_click, simulate.p.value = TRUE)
+q5_all_chisq <- chisq.test(q5_click_no_click, simulate.p.value = TRUE)
 # X-squared = 29.623, df = NA, p-value = 0.0004998
 
 # Click no click without None
-chisq.test(q5_click_no_click[, 2:ncol(q5_click_no_click)], simulate.p.value = TRUE)
+q5_no_none_chisq <- chisq.test(q5_click_no_click[, 2:ncol(q5_click_no_click)], simulate.p.value = TRUE)
 # X-squared = 18.74, df = NA, p-value = 0.001999
 
 # Click no click all models and None paired
@@ -388,40 +346,22 @@ for (col in seq_len(ncol(q5_pairs))) {
   q5_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
-# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
-summary(aov(result ~ cSessionId, q5))
-#cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  20  26.32  1.3160   1.452  0.169
-# Residuals   32  29.00  0.9062
+# Power analysis on all models and None
+pwr.chisq.test(
+  sqrt(q5_all_chisq[["statistic"]][[1]] / (nrow(q5) * (ncol(q5_click_no_click) - 1))),
+  nrow(q5),
+  ncol(q5_click_no_click) - 1
+)
+# power = 0.5669488
 
-summary(aov(result ~ painting, q5))
-#cor.test(q5$result, as.numeric(factor(q5$painting)))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# painting     7   3.61  0.5152   0.448  0.866
-# Residuals   45  51.71  1.1492
+# Power analysis on all models no None
+pwr.chisq.test(
+  sqrt(q5_no_none_chisq[["statistic"]][[1]] / (nrow(q5) * (ncol(q5_click_no_click) - 2))),
+  nrow(q5),
+  ncol(q5_click_no_click) - 2
+)
+# power = 0.5363226
 
-summary(aov(result ~ cSessionId + painting, q5))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  20  26.32  1.3160   1.319  0.253
-# painting     7   4.06  0.5800   0.581  0.764
-# Residuals   25  24.94  0.9976
-
-summary(aov(result ~ cSessionId, q5[q5$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  19   15.5  0.8158   0.859  0.629
-# Residuals   30   28.5  0.9500
-
-summary(aov(result ~ painting, q5[q5$result != -1,]))
-#              Df Sum Sq Mean Sq F value Pr(>F)
-# painting     7   5.29  0.7551   0.819  0.577
-# Residuals   42  38.71  0.9218
-
-summary(aov(result ~ cSessionId + painting, q5[q5$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  19 15.500  0.8158   0.781  0.706
-# painting     7  4.465  0.6378   0.610  0.742
-# Residuals   23 24.035  1.0450
 
 
 # H0: No visual processing method is considered more descriptive than the others
@@ -438,11 +378,11 @@ for (r in unique(q6$result)){
 }
 
 # Click no click Chi Square Test
-chisq.test(q6_click_no_click, simulate.p.value = TRUE)
+q6_all_chisq <- chisq.test(q6_click_no_click, simulate.p.value = TRUE)
 # X-squared = 7.6078, df = NA, p-value = 0.05397
 
 # Click no click without None
-chisq.test(q6_click_no_click[, 2:ncol(q6_click_no_click)], simulate.p.value = TRUE)
+q6_no_none_chisq <- chisq.test(q6_click_no_click[, 2:ncol(q6_click_no_click)], simulate.p.value = TRUE)
 # X-squared = 6.973, df = NA, p-value = 0.03248
 
 # Click no click all models and None paired
@@ -458,50 +398,21 @@ for (col in seq_len(ncol(q6_pairs))) {
   q6_cnc_pair_result[model_x + 2, model_y + 2] <- val[["p.value"]]
 }
 
-# If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
-summary(aov(result ~ cSessionId, q6))
-#cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  22  28.94   1.315   0.861  0.636
-# Residuals   28  42.75   1.527
+# Power analysis on all models and None
+pwr.chisq.test(
+  sqrt(q6_all_chisq[["statistic"]][[1]] / (nrow(q6) * (ncol(q6_click_no_click) - 1))),
+  nrow(q6),
+  ncol(q6_click_no_click) - 1
+)
+# power = 0.2359731
 
-summary(aov(result ~ painting, q6))
-#cor.test(q6$result, as.numeric(factor(q6$painting)))
-#             Df Sum Sq Mean Sq F value  Pr(>F)
-# painting     7  27.38   3.911   3.795 0.00273 **
-# Residuals   43  44.31   1.030
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-summary(aov(result ~ cSessionId + painting, q6))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  22  28.94   1.315   1.604 0.1420
-# painting     7  25.52   3.646   4.445 0.0036 **
-# Residuals   21  17.23   0.820
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-summary(aov(result ~ cSessionId, q6[q6$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  18  14.05  0.7807   1.099  0.414
-# Residuals   21  14.92  0.7106
-
-summary(aov(result ~ painting, q6[q6$result != -1,]))
-#              Df Sum Sq Mean Sq F value Pr(>F)
-# painting     7  16.03  2.2896   5.659 0.000258 ***
-# Residuals   32  12.95  0.4046
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-
-summary(aov(result ~ cSessionId + painting, q6[q6$result != -1,]))
-#             Df Sum Sq Mean Sq F value Pr(>F)
-# cSessionId  18  14.05  0.7807   2.584 0.0386 *
-# painting     7  10.69  1.5275   5.055 0.0049 **
-# Residuals   14   4.23  0.3022
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
+# Power analysis on all models and None
+pwr.chisq.test(
+  sqrt(q6_all_chisq[["statistic"]][[1]] / (nrow(q6) * (ncol(q6_click_no_click) - 2))),
+  nrow(q6),
+  ncol(q6_click_no_click) - 2
+)
+# power = 0.3973695
 
 
 # Generate summary data
@@ -769,3 +680,134 @@ xtable(
 #   q6_chisq_pair_result[pair_y + 2, pair_x + 2] <- val[["p.value"]]
 #   q6_chisq_pair_result[pair_x + 2, pair_y + 2] <- val[["p.value"]]
 # }
+
+
+
+# # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
+# summary(aov(result ~ cSessionId, q4))
+# # cor.test(q4$result, as.numeric(factor(q4$cSessionId)))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  21  43.46   2.069    1.45   0.18
+# # Residuals   27  38.54   1.427
+# # length(unique(q4$cSessionId))
+#
+# summary(aov(result ~ painting, q4))
+# # cor.test(q4$result, as.numeric(factor(q4$painting)))
+# #              Df Sum Sq Mean Sq F value Pr(>F)
+# # painting     7  12.67   1.810    1.07    0.4
+# # Residuals   41  69.33   1.691
+#
+# summary(aov(result ~ cSessionId + painting, q4))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  21  43.46   2.069   1.372  0.242
+# # painting     7   8.37   1.196   0.793  0.602
+# # Residuals   20  30.17   1.508
+#
+# summary(aov(result ~ cSessionId, q4[q4$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  17  23.39   1.376   1.154   0.37
+# # Residuals   22  26.21   1.192
+# # length(unique(q4$cSessionId))
+#
+# summary(aov(result ~ painting, q4[q4$result != -1,]))
+# #              Df Sum Sq Mean Sq F value Pr(>F)
+# # painting     7  17.75  2.5357   2.548 0.0333 *
+# # Residuals   32  31.85  0.9953
+#
+# summary(aov(result ~ cSessionId + painting, q4[q4$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  17  23.39  1.3756   1.477  0.226
+# # painting     7  12.24  1.7492   1.878  0.145
+# # Residuals   15  13.97  0.9313
+#
+# q4merge <- data.frame(q4)
+# q4merge[q4merge$result == 2,] <- 3
+# summary(aov(result ~ cSessionId + painting, q4merge[q4merge$result != -1,]))
+# #             Df Sum Sq Mean Sq F value  Pr(>F)
+# # cSessionId  17  55.48   3.263   4.716 0.00164 **
+# # painting     6   6.23   1.038   1.500 0.24058
+# # Residuals   16  11.07   0.692
+# # ---
+# # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+
+# # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
+# summary(aov(result ~ cSessionId, q5))
+# #cor.test(q5$result, as.numeric(factor(q5$cSessionId)))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  20  26.32  1.3160   1.452  0.169
+# # Residuals   32  29.00  0.9062
+#
+# summary(aov(result ~ painting, q5))
+# #cor.test(q5$result, as.numeric(factor(q5$painting)))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # painting     7   3.61  0.5152   0.448  0.866
+# # Residuals   45  51.71  1.1492
+#
+# summary(aov(result ~ cSessionId + painting, q5))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  20  26.32  1.3160   1.319  0.253
+# # painting     7   4.06  0.5800   0.581  0.764
+# # Residuals   25  24.94  0.9976
+#
+# summary(aov(result ~ cSessionId, q5[q5$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  19   15.5  0.8158   0.859  0.629
+# # Residuals   30   28.5  0.9500
+#
+# summary(aov(result ~ painting, q5[q5$result != -1,]))
+# #              Df Sum Sq Mean Sq F value Pr(>F)
+# # painting     7   5.29  0.7551   0.819  0.577
+# # Residuals   42  38.71  0.9218
+#
+# summary(aov(result ~ cSessionId + painting, q5[q5$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  19 15.500  0.8158   0.781  0.706
+# # painting     7  4.465  0.6378   0.610  0.742
+# # Residuals   23 24.035  1.0450
+
+
+# # If we differ the painting or the participant we do not expect a change in the the discriptiveness of the models
+# summary(aov(result ~ cSessionId, q6))
+# #cor.test(q6$result, as.numeric(factor(q6$cSessionId)))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  22  28.94   1.315   0.861  0.636
+# # Residuals   28  42.75   1.527
+#
+# summary(aov(result ~ painting, q6))
+# #cor.test(q6$result, as.numeric(factor(q6$painting)))
+# #             Df Sum Sq Mean Sq F value  Pr(>F)
+# # painting     7  27.38   3.911   3.795 0.00273 **
+# # Residuals   43  44.31   1.030
+# # ---
+# # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+# summary(aov(result ~ cSessionId + painting, q6))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  22  28.94   1.315   1.604 0.1420
+# # painting     7  25.52   3.646   4.445 0.0036 **
+# # Residuals   21  17.23   0.820
+# # ---
+# # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+# summary(aov(result ~ cSessionId, q6[q6$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  18  14.05  0.7807   1.099  0.414
+# # Residuals   21  14.92  0.7106
+#
+# summary(aov(result ~ painting, q6[q6$result != -1,]))
+# #              Df Sum Sq Mean Sq F value Pr(>F)
+# # painting     7  16.03  2.2896   5.659 0.000258 ***
+# # Residuals   32  12.95  0.4046
+# # ---
+# # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+#
+# summary(aov(result ~ cSessionId + painting, q6[q6$result != -1,]))
+# #             Df Sum Sq Mean Sq F value Pr(>F)
+# # cSessionId  18  14.05  0.7807   2.584 0.0386 *
+# # painting     7  10.69  1.5275   5.055 0.0049 **
+# # Residuals   14   4.23  0.3022
+# # ---
+# # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
